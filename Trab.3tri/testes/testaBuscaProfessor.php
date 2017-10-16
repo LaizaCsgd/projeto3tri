@@ -5,3 +5,4 @@
 
 	print_r($lista);
 
+?>

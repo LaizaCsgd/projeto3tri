@@ -19,35 +19,17 @@
 	<!-- conteudo principal -->
 	<article class="coluna80">
 
-<?php
 
-	
-	include("professores.php");
-	//a função retorna um array contendo os professores
-	$lista = buscaProfessor($siape);
+	<section class="foto">
+		<img src="<?=$professor['foto'] ?>">
+	</section>
 
-	
-
-		print('
-
-			<section class="foto">
-				<img src="imagens/pessoa.png">
-			</section>
-
-			<section class="dados">
-				<p>Nome: '.$lista["nome"].'</p>
-				<p>Email: '.$lista["email"].'</p>
-				<p>Disciplinas: Fundamento de Informática</p>
-				<p>Sala: B7</p>
-
-			</section>
-	
-
-
-			');
-	
-
-?>
+	<section class="dados">
+		<h2><?=$professor['nome']?></h2>
+			<h3><?=$professor['email']?></h3>
+			<h3>Disciplinas: </h3>
+			<h3>Sala: </h3>
+	</section>
 
 
 <?php

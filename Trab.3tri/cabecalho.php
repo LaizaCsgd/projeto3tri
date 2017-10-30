@@ -19,7 +19,7 @@
 	<nav class="menu">
 		<a href=""><section class="item menu">Próximas tarefas</section></a>
 		<a href=""><section class="item menu">Todas Tarefas</section></a>
-		<a href=""><section class="item menu">Tarefas por disciplina</section></a>
+		<a href="listaDisciplinasOfertas.php"><section class="item menu">Tarefas por disciplina</section></a>
 		<a href=""><section class="item menu">Tarefas por data</section></a>
 		<a href="listaProfessores.php"><section class="item menu">Professores</section></a>
 		<a href="listaAlunos.php"><section class="item menu">Colegas</section></a>

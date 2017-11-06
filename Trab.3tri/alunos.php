@@ -40,8 +40,9 @@
 			if ($colunas[0]==$codigo){
 				$aluno['matricula'] = $colunas[0];
 				$aluno['nome'] = $colunas[1];
-				$aluno['email'] = $colunas[2];
-				$aluno['foto'] = $colunas[3];
+				$aluno['turma'] = $colunas[2];
+				$aluno['email'] = $colunas[3];
+				$aluno['foto'] = $colunas[4];
 			}
 		}
 

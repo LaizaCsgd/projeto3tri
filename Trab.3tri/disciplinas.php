@@ -31,7 +31,6 @@
 			if ($colunas[0]==$codigo){
 				$disciplina['codigo'] = $colunas[0];
 				$disciplina['nome'] = $colunas[1];
-				
 			}
 		}
 		return $disciplina;
@@ -43,16 +42,17 @@
 		$dados = file("dados/ofertas.csv");
 
 		foreach ($dados as $posicao => $linha) {
-			if($posicao!=0){
 				$colunas = explode("," , $linha);
 
+			if($posicao!=0 and $turma==$colunas[1]){
+				
 				$oferta = array();
 				$oferta['ano'] = $colunas[0];
 				$oferta['turma']= $colunas[1];
 				$oferta['cod_disciplina'] = $colunas[2];
-				$oferta['cod_professorr'] = $colunas[3];
+				$oferta['cod_professor'] = $colunas[3];
 				
-				$ofertas[]=$oferta;
+				$ofertas[] = $oferta;
 			}
 		}
 		return $ofertas;

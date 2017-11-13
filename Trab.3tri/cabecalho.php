@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,6 +19,36 @@
 	<header>
 		<img src="imagens/logo.png" id="logo"/>
 		<h1 id="nome_site">Agenda de tarefas</h1>
+
+		<div>
+
+<?php
+	 if(isset($_SESSION['login'])){
+?>
+		<p>Olá, <?=$_SESSION['nome']?></p>
+		<a href="logout.php">Sair</a>
+
+<?php
+	}else{
+?>
+
+	<form method="post" action="login.php">
+			<label for="login">Login</label>
+			<input type="text" name="login">
+
+			<label for="senha">Senha</label>
+			<input type="password" name="senha">
+
+			<input type="submit" name="enviar">
+	</form>
+
+<?php
+	}
+?>
+
+</div>
+
+	</div>
 	</header>
 	<div class='divider'></div>
 	<!-- menu -->

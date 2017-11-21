@@ -26,13 +26,14 @@
 	 if(isset($_SESSION['login'])){
 ?>
 		<p>Olá, <?=$_SESSION['nome']?></p>
+		<a href="restrito_adm.php">Area ADM</a>
 		<a href="logout.php">Sair</a>
 
 <?php
 	}else{
 ?>
 
-	<form method="post" action="login.php">
+	<form method="post" action="login.php" id="form">
 			<label for="login">Login</label>
 			<input type="text" name="login">
 

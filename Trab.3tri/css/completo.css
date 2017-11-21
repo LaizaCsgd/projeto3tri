@@ -114,3 +114,7 @@ a{
 	float: left;
 	color: #fff;
 }
+#form{
+	float: right;
+	border: 1px solid #000;
+}

@@ -1,0 +1,38 @@
+.clicavel{
+	width: 50px;
+}
+
+.clicavel img{
+	width: 100%;
+}
+
+.modal{
+	position: fixed;
+	top:0;
+	left: 0;
+	background: #2E2E2E;
+	width: 100%;
+	height: 100%;
+	opacity: 0.99;
+}
+
+.modal img{
+	margin-top: 10%;
+}
+
+.escondido{
+	display: none;
+}
+
+.modal .fechar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+#imagem{
+	width:30%;
+	height: 30%;
+	margin-left: 35%;
+}

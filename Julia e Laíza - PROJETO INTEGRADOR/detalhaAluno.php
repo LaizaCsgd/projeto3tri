@@ -17,14 +17,17 @@
 	</div>
 	<div class="modal escondido">
 		<div  class="conteudo">
-		<div class="fechar"><img src="imagens/fechar.png"></div>
+		<div class="fechar"><img src="imagens/fechar2.png"></div>
 			<img id="imagem" src="<?=$aluno['foto'] ?>">
 		</div>
 	</div>
 
 	<section class="dados">
 		<h2><?=$aluno['nome']?></h2>
-		<h3><?=$aluno['email']?></h3>
+		<?=$aluno['email']?>
+		<br>
+		<br>
+		<?=$aluno['turma']?>
 	</section>
 <?php
 	include("rodape.php")

@@ -3,6 +3,7 @@ include('cabecalho.php');
 
 if (isset($_SESSION['login'])) {
 //mover o arquivo rcebido para o destino esperado
+
 $origem=$_FILES['foto']['tmp_name'];
 
 $partesNome=explode(' ',$_POST['nome']);
@@ -12,26 +13,25 @@ $sobrenome=end($partesNome);
 $nomeArquivo=$primeiroNome.'.'.$sobrenome;
 $extensao=explode('/', $_FILES['foto']['type']);
 
-$destino='imagens/alunos/'.$nomeArquivo.'.'.$extensao[1];
+$destino='imagens/professores/'.$nomeArquivo.'.'.$extensao[1];
 
 move_uploaded_file($origem,$destino);
 ////////////////////////////////////////////
 
-
 //gravar os demais no csv
-$matricula=$_POST['matricula'];
+$siape=$_POST['siape'];
 $nome=$_POST['nome'];
-$turma=$_POST['turma'];
 $email=$_POST['email'];
+$disciplina=$_POST['disciplina'];
 $foto=$destino;
 
-	$linha="\n".$matricula.",".$nome.",".$turma.",".$email.",".$destino;
+	$linha="\n".$siape.",".$nome.",".$email.",".$disciplina.",".$destino;
 
-	$arquivo=fopen("dados/alunos.csv", "a+");
+	$arquivo=fopen("dados/professores.csv", "a+");
 
 	fwrite($arquivo, $linha);
 	fclose($arquivo);
-	echo ("<meta http-equiv='refresh' content='0;url=listaAlunos.php'> ");
+	echo ("<meta http-equiv='refresh' content='0;url=listaProfessores.php'> ");
 
 }else{
 	?>

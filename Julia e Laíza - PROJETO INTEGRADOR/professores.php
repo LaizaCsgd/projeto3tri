@@ -15,10 +15,15 @@
 				$professor['email'] = $colunas[2];
 				$professor['disciplina'] = $colunas[3];
 				$professor['foto'] = $colunas[4];
+
 			}
 		}
 	return $professor;
+
 }
+
+//$i= buscaProfessor(1802113);
+//print_r($i);
 
 	function listaProfessores(){
 	$professores = array();
@@ -42,3 +47,4 @@
 	}
 	return $professores;
 }	
+?>

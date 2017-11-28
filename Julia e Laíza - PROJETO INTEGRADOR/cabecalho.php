@@ -17,8 +17,7 @@
 <body>
 	<!-- cabeçalho -->
 	<header>
-		<img src="imagens/logo.png" id="logo"/>
-		<h1 id="nome_site">Agenda de tarefas</h1>
+		<img src="imagens/logo2.png" id="logo"/>
 
 		<div>
 
